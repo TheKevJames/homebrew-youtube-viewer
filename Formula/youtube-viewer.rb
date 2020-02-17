@@ -5,6 +5,8 @@ class YoutubeViewer < Formula
   sha256 "f049fe7f6f27c1dbc4e1835f2b99c922b7d66b11568edd63653c670ce5500cfd"
   head "https://github.com/trizen/youtube-viewer.git"
 
+  depends_on "mpv"
+
   # build deps
   resource "inc::latest" do
     url "https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/inc-latest-0.500.tar.gz"
