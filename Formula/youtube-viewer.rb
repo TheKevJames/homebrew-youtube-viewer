@@ -1,8 +1,8 @@
 class YoutubeViewer < Formula
   desc "Lightweight app for searching and streaming videos from YouTube"
   homepage "https://trizenx.blogspot.com/2012/03/gtk-youtube-viewer.html"
-  url "https://github.com/trizen/youtube-viewer/archive/3.5.6.tar.gz"
-  sha256 "b4d2d17e3ff8aba5f3c358db170867d89ca5e35f3340312c81b9af7c70f3c826"
+  url "https://github.com/trizen/youtube-viewer/archive/3.7.4.tar.gz"
+  sha256 "f049fe7f6f27c1dbc4e1835f2b99c922b7d66b11568edd63653c670ce5500cfd"
   head "https://github.com/trizen/youtube-viewer.git"
 
   # build deps
@@ -26,7 +26,7 @@ class YoutubeViewer < Formula
     sha256 "1fe491a6cda914b01bc8e592faa2b5404e9f35915ca15322f8f2a8d8f9008c18"
   end
 
-  # runtime deps, see: https://github.com/trizen/youtube-viewer/blob/3.5.6/META.json#L34-L53
+  # runtime deps, see: https://github.com/trizen/youtube-viewer/blob/3.7.4/META.json#L34-L53
   resource "Data::Dump" do
     url "https://cpan.metacpan.org/authors/id/G/GA/GAAS/Data-Dump-1.23.tar.gz"
     sha256 "af53b05ef1387b4cab4427e6789179283e4f0da8cf036e8db516ddb344512b65"
