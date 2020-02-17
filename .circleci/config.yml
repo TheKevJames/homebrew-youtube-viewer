@@ -1,0 +1,10 @@
+version: 2.1
+
+orbs:
+  linter: thekevjames/linter@1
+
+workflows:
+  run-jobs:
+    jobs:
+      - linter/pre-commit:
+          python_version: 3.7.6

@@ -15,6 +15,6 @@ jobs:
         rm -rf "${HOMEBREW_TAP_DIR}"
         ln -s "${PWD}" "${HOMEBREW_TAP_DIR}"
       env:
-        HOMEBREW_TAP_DIR: /usr/local/Homebrew/Library/Taps/thekevjames/homebrew-youtube-viewer 
+        HOMEBREW_TAP_DIR: /usr/local/Homebrew/Library/Taps/thekevjames/homebrew-youtube-viewer
     - name: brew test-bot
       run: brew test-bot

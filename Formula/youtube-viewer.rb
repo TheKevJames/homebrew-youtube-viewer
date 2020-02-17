@@ -26,7 +26,7 @@ class YoutubeViewer < Formula
     sha256 "1fe491a6cda914b01bc8e592faa2b5404e9f35915ca15322f8f2a8d8f9008c18"
   end
 
-  # runtime deps, see: https://github.com/trizen/youtube-viewer/blob/master/META.json#L34-L53
+  # runtime deps, see: https://github.com/trizen/youtube-viewer/blob/3.5.6/META.json#L34-L53
   resource "Data::Dump" do
     url "https://cpan.metacpan.org/authors/id/G/GA/GAAS/Data-Dump-1.23.tar.gz"
     sha256 "af53b05ef1387b4cab4427e6789179283e4f0da8cf036e8db516ddb344512b65"
