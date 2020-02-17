@@ -1,8 +1,8 @@
 class YoutubeViewer < Formula
   desc "Lightweight app for searching and streaming videos from YouTube"
   homepage "https://trizenx.blogspot.com/2012/03/gtk-youtube-viewer.html"
-  url "https://github.com/trizen/youtube-viewer/archive/3.5.6.tar.gz"
-  sha256 "b4d2d17e3ff8aba5f3c358db170867d89ca5e35f3340312c81b9af7c70f3c826"
+  url "https://github.com/trizen/youtube-viewer/archive/3.7.4.tar.gz"
+  sha256 "f049fe7f6f27c1dbc4e1835f2b99c922b7d66b11568edd63653c670ce5500cfd"
   head "https://github.com/trizen/youtube-viewer.git"
 
   # build deps
