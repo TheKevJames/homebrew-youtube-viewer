@@ -139,7 +139,7 @@ class YoutubeViewer < Formula
     system "./Build", "install"
 
     %w[youtube-viewer].each do |cmd|
-      (bin/cmd).write_env_script(libexec/"bin/#{cmd}", :PERL5LIB => ENV["PERL5LIB"])
+      (bin/cmd).write_env_script(libexec/"bin/#{cmd}", PERL5LIB: ENV["PERL5LIB"])
     end
   end
 
