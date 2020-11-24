@@ -137,7 +137,7 @@ repos:
 
 # shell
 -   repo: https://github.com/lovesegfault/beautysh
-    rev: 5.0.2
+    rev: 6.0.1
     hooks:
     -   id: beautysh
 -   repo: https://github.com/openstack/bashate
