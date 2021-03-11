@@ -144,6 +144,6 @@ class YoutubeViewer < Formula
   end
 
   test do
-    assert_match version.to_s, shell_output("#{bin}/youtube-viewer --version").split(/ /)[2]
+    assert_match version.to_s, shell_output("#{bin}/youtube-viewer --version").split[2]
   end
 end
