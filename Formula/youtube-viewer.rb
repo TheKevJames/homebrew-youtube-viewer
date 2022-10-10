@@ -5,6 +5,8 @@ class YoutubeViewer < Formula
   sha256 "bb981d40460c69f78af798f3ac7742447c9e9da7bfdd9bf86e58fe68f33f1bf8"
   head "https://github.com/trizen/youtube-viewer.git"
 
+  license "MIT"
+
   depends_on "mpv"
 
   # build deps
