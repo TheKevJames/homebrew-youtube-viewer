@@ -3,9 +3,8 @@ class YoutubeViewer < Formula
   homepage "https://trizenx.blogspot.com/2012/03/gtk-youtube-viewer.html"
   url "https://github.com/trizen/youtube-viewer/archive/3.10.4.tar.gz"
   sha256 "9ade92cf6383c4019ae275aedf82b56fa113ead091c6ae64ca0f11581b448924"
-  head "https://github.com/trizen/youtube-viewer.git"
-
   license "MIT"
+  head "https://github.com/trizen/youtube-viewer.git"
 
   depends_on "mpv"
 
