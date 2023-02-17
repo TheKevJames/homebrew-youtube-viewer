@@ -1,0 +1,9 @@
+{
+  "extends": ["github>thekevjames/tools:personal"],
+  "packageRules": [
+    {
+      "packageNames": ["trizen/youtube-viewer"],
+      "automerge": true,
+    },
+  ],
+}
