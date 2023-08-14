@@ -2,6 +2,9 @@ ci:
     autofix_commit_msg: 'refactor(lint): apply automatic lint fixes'
     autoupdate_commit_msg: 'chore(deps): bump pre-commit linter versions'
 
+default_language_version:
+    python: python3.11
+
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
@@ -30,3 +33,12 @@ repos:
     -   id: rst-backticks
     -   id: rst-directive-colons
     -   id: rst-inline-touching-normal
+
+# json
+- repo: https://github.com/python-jsonschema/check-jsonschema
+  rev: 0.24.1
+  hooks:
+    - id: check-github-workflows
+    - id: check-renovate
+      additional_dependencies:
+      - pyjson5
