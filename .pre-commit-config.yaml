@@ -141,7 +141,7 @@ repos:
           - --ignore=E501,E741,W503
           - --min-python-version=3.11
   - repo: https://github.com/dosisod/refurb
-    rev: v1.27.0
+    rev: v1.28.0
     hooks:
       - id: refurb
         args:
