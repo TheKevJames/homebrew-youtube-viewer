@@ -68,7 +68,7 @@ repos:
           - -d ungrouped-imports  # conflicts with reorder-python-imports
           - -d wrong-import-order  # conflicts with reorder-python-imports
   - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.5.4
+    rev: v1.5.5
     hooks:
       - id: remove-crlf
       - id: remove-tabs
@@ -79,7 +79,7 @@ repos:
       - id: reorder-python-imports
         args: [--py311-plus]
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.0
+    rev: v3.15.1
     hooks:
       - id: pyupgrade
         args: [--py311-plus]
@@ -225,7 +225,7 @@ repos:
 
 # terraform
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.86.0
+    rev: v1.87.1
     hooks:
       - id: terraform_fmt
       - id: terraform_validate
