@@ -118,7 +118,7 @@ repos:
         - flake8-comprehensions==3.14.0
         - flake8-typing-imports==1.15.0
   - repo: https://github.com/hhatto/autopep8
-    rev: v2.0.4
+    rev: v2.1.0
     hooks:
       - id: autopep8
         args: [-a, -i, -p2]
@@ -225,7 +225,7 @@ repos:
 
 # terraform
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.88.1
+    rev: v1.88.2
     hooks:
       - id: terraform_fmt
       - id: terraform_validate
@@ -241,7 +241,7 @@ repos:
       - id: bashate
         args: [--max-line-length=80]
   - repo: https://github.com/shellcheck-py/shellcheck-py
-    rev: v0.9.0.6
+    rev: v0.10.0.1
     hooks:
       - id: shellcheck
   - repo: https://github.com/jumanjihouse/pre-commit-hooks
