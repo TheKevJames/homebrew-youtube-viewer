@@ -1,0 +1,16 @@
+version: 2.1
+
+orbs:
+  linter: talkiq/linter@4
+
+executors:
+  python:
+    docker:
+      - image: python:3.11.9
+    resource_class: medium
+
+workflows:
+  run-jobs:
+    jobs:
+      - linter/pre-commit:
+          executor: python
