@@ -2,7 +2,7 @@
   "extends": ["github>thekevjames/tools:personal"],
   "packageRules": [
     {
-      "packageNames": ["trizen/youtube-viewer"],
+      "matchPackageNames": ["trizen/youtube-viewer"],
       "automerge": true,
     },
   ],
