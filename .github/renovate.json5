@@ -1,9 +1,12 @@
 {
-  "extends": ["github>thekevjames/tools:personal"],
-  "packageRules": [
-    {
-      "matchPackageNames": ["trizen/youtube-viewer"],
-      "automerge": true,
-    },
-  ],
+    "extends": [
+        "github>thekevjames/tools:personal",
+        "github>thekevjames/tools//renovate/version-as-app.json5",  // TODO: library? homebrew doesn't isolate apps
+    ],
+    "packageRules": [
+        {
+            "matchPackageNames": ["trizen/youtube-viewer"],
+            "automerge": true,
+        },
+    ],
 }
