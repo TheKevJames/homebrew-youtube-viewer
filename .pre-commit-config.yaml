@@ -46,7 +46,6 @@ repos:
   - repo: https://github.com/PyCQA/pylint
     rev: v4.0.5
     hooks:
-    # TODO: pylint-import-modules support for pylint v3 (or alternative linter)
       - id: pylint
         args:
           - --load-plugins=pylint.extensions.mccabe
@@ -56,7 +55,6 @@ repos:
           - --max-positional-arguments=10
           - --max-args=10
           - --score=n
-          # TODO: narrow these down
           - -d broad-except
           - -d duplicate-code
           - -d fixme
@@ -117,6 +115,7 @@ repos:
           - flake8-2020==1.8.1
           - flake8-broken-line==1.0.0
           - flake8-builtins==3.1.0
+          - flake8-complicated-walrus==2.1.0
           - flake8-comprehensions==3.17.0
           - flake8-import-restrictions==2.1
   - repo: https://github.com/guilatrova/tryceratops
@@ -144,7 +143,6 @@ repos:
     rev: 7.3.0
     hooks:
       - id: flake8
-        language: python
         additional_dependencies: *flake8deps
         args:
           # https://www.flake8rules.com/
@@ -179,6 +177,14 @@ repos:
         language: pygrep
         types: [toml]
         files: 'pyproject.toml$'
+      - id: pyproject-no-unpinned-git-deps
+        name: disallow git dependencies without rev/tag
+        description: 'Disallow Poetry/PDM git dependencies unless they are pinned with a rev or tag on the same line'
+        # Flags lines that contain `git = "..."` but do NOT also contain `rev =` or `tag =`.
+        entry: '^(?!\s*#)(?=[^#]*\bgit\s*=\s*"[^"]+")(?![^#]*\b(?:rev|tag)\s*=).*$'
+        language: pygrep
+        types: [toml]
+        files: 'pyproject\.toml$'
       - id: pytest-fixtures-require-scope
         name: ensure pytest fixture scopes are explicitly set
         description: 'Ensure we explicitly set pytest fixture scopes'
@@ -226,18 +232,6 @@ repos:
 # kotlin
       - id: pretty-format-kotlin
         args: [--autofix]
-
-# javascript
-  - repo: https://github.com/pre-commit/mirrors-fixmyjs
-    rev: v2.0.0
-    hooks:
-      - id: fixmyjs
-        exclude: '(.*.min.js)'
-  - repo: https://github.com/pre-commit/mirrors-jshint
-    rev: v2.13.6
-    hooks:
-      - id: jshint
-        exclude: '(.*.min.js)'
 
 # terraform
   - repo: https://github.com/antonbabenko/pre-commit-terraform
