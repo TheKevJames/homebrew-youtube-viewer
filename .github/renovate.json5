@@ -1,7 +1,7 @@
 {
     "extends": [
         "github>thekevjames/tools:personal",
-        "github>thekevjames/tools//renovate/version-as-app.json5",  // TODO: library? homebrew doesn't isolate apps
+        "github>thekevjames/tools//renovate/version-as-app.json5",
     ],
     "packageRules": [
         {
