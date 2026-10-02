@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v7.0.1
       - uses: astral-sh/setup-uv@v10.2.0
         with:
-          enable: false
+          enable-cache: false
           # renovate: datasource=github-releases depName=astral-sh/uv
           version: 0.12.21
           # renovate: datasource=docker depName=python
