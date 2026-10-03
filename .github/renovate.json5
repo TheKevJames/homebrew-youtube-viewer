@@ -5,7 +5,7 @@
     ],
     "packageRules": [
         {
-            "matchPackageNames": ["trizen/youtube-viewer"],
+            "matchPackageNames": ["Homebrew/actions", "trizen/youtube-viewer"],
             "automerge": true,
         },
     ],
