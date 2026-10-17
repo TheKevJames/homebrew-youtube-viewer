@@ -4,7 +4,7 @@ class YoutubeViewer < Formula
   url "https://github.com/trizen/youtube-viewer/archive/refs/tags/3.11.6.tar.gz"
   sha256 "bf0a5b2bf911ecb2201212d2a87d8425c9140f87093957af1e61cbe1039a46f1"
   license "MIT"
-  head "https://github.com/trizen/youtube-viewer.git"
+  head "https://github.com/trizen/youtube-viewer.git", branch: "master"
 
   depends_on "mpv"
 
