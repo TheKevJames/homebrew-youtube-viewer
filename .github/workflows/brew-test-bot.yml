@@ -25,4 +25,8 @@ jobs:
         run: brew install-bundler-gems
 
       - name: Run `brew test-bot`
-        run: find Formula -type f -exec brew test-bot {} \;
+        run: |
+          set -e
+          for formula in Formula/*.rb; do
+            brew test-bot "$formula"
+          done
